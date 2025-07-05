@@ -5,7 +5,7 @@ set(PROJECT_VERSION 0.0.${PATCH_VERSION})
 
 project(homework_2 VERSION ${PROJECT_VERSION})
 
-option(WITH_GTEST "Whether to build GTest test" ON)
+option(WITH_GTEST "Whether to build GTest test" OFF)
 
 configure_file(version.h.in version.h)
 
