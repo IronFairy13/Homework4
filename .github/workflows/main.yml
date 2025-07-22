@@ -48,7 +48,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.run_number }}
-          release_name: Release ${{ github.run_number }}
+          asset_path: ./build/print_ip-0.0.${{ github.run_number }}-Linux.deb
+          asset_name: print_ip-0.0.${{ github.run_number }}-Linux.deb
           draft: false
           prerelease: false
 
